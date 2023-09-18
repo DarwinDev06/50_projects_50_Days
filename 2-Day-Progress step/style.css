@@ -1,0 +1,86 @@
+body {
+    background-color: rgb(247, 244, 244);
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Handjet', cursive;
+}
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 550px;
+    margin: 200px auto 15px auto;
+}
+
+.circulo {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: white;
+    border: 3px solid rgb(212, 212, 212);
+    transition-duration: 2.1s;
+}
+
+.border-circle {
+    border: 3px solid rgb(40, 149, 218);
+    transition-duration: 2.1s;
+}
+
+
+.linea {
+    width: 100px;
+    height: 1px;
+    background-color: rgb(212, 212, 212);
+    border: 1px solid rgb(212, 212, 212);
+    transition-duration: 2s;
+    transition-timing-function:linear ease-in;
+}
+
+.fill-line {
+    background-color: rgb(40, 149, 218);
+    border: 1px solid rgb(40, 149, 218);
+    transition-duration: 2s;
+    transition-timing-function:linear ease-in;
+    transform:  translateY(-0%);
+}
+
+h5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: 'Handjet', cursive;
+} 
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    
+}
+
+button {
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(40, 149, 218);
+    color: #fff;
+    font-size: medium;
+    font-weight: 400;
+    
+}
+button:disabled {
+    background: #9c9c9cc2;
+}
+
+footer {
+    text-align: center;
+    font-family: 'Handjet', cursive;
+}
