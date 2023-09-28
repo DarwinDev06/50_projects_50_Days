@@ -1,0 +1,151 @@
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: rgb(43, 42, 42);
+    margin: 0;
+}
+nav {
+    background: rgb(255 125 125);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: fixed;
+    top: -100px;
+    left: -100px; 
+    z-index: 111;
+
+}
+
+.menu {
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    left: 128px;
+    top: 135px;
+}
+
+.menuIcon {
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+}
+
+.close {
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    left: 40px;
+    top: 125px;
+    cursor: pointer;
+}
+
+.closeIcon{
+    width: 20px;
+    height: 20px;
+}
+
+.content {
+    background-color: rgba(247, 247, 247, 0.945);
+    padding: 100px 185px 2px 185px;
+}
+
+
+.title > h1 {
+    font-size: 28px;
+    font-weight:600;
+    margin: 0;
+}
+.title > p {
+    font-size: 16px;
+    font-weight:lighter;
+    font-style: italic;
+    color: rgb(128, 128, 128);
+    margin-top: 6px;
+}
+
+.imgBerlin {
+
+    width: 100%;
+}
+
+.lateralBar {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: fixed;
+    left: -400px;
+    bottom: 65px;
+    transition-duration: 1s;
+}
+
+.lateralBarOpen {
+    left: 5px;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+}
+.lateralBarClose {
+    left: -400px;
+    transition-duration: 1s;
+    transition-timing-function: ease-out ;
+}
+
+.lateralBar > div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100px;
+    height: 30px;
+}
+
+.lateralHome{
+    position: relative;
+    left: 30px;
+    cursor: pointer;
+}
+
+.lateralAbout {
+    position: relative;
+    left: 50px;
+    cursor: pointer;
+}
+
+.lateralContact {
+    position: relative;
+    left: 70px;
+    cursor: pointer;
+}
+.lateralBar img {
+    width: 22px;
+    height: 22px;
+}
+
+.lateralBar p {
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+}
+
+.rotateOpen {
+    transform: rotate(-90deg);
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+}
+
+.rotateClose {
+    transform: rotate(0deg);
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+}
+
+.rotateContentOpen {
+    transform: rotate(-19deg) translate(219px, -190px);
+    transition-timing-function: ease-in;
+    transition-duration: 0.5s;
+    z-index: 110;
+}
+
+.rotateContentClose {
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+    z-index: 110;
+}
+
